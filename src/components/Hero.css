@@ -1,0 +1,202 @@
+.hero-container {
+    background: rgb(217, 30, 24);
+    background: linear-gradient(144deg, rgba(217, 30, 24, 1) 22%, rgba(251, 95, 2, 1) 78%);
+}
+
+.main-nav {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.main-nav .site-logo h2 {
+    color: #fff;
+    cursor: pointer;
+    margin-right: 400px;
+}
+
+.main-nav .nav-cart {
+    display: flex;
+    align-items: center;
+    background-color: #f89406;
+    padding: 2px 15px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.main-nav .nav-cart p {
+    margin: 0 10px;
+}
+
+.hero-contents {
+    text-align: center;
+    color: #fff;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.hero-contents h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    word-spacing: 5px;
+}
+
+.hero-contents h4 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    word-spacing: 5px;
+}
+
+.hero-contents form input {
+    width: 800px;
+    padding: 25px 40px;
+    border-radius: 40px;
+    border: 2px solid rgb(206, 206, 206);
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.342);
+}
+
+.hero-contents form input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.342);
+}
+
+:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.342);
+}
+
+.hero-contents .hero-form {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-form-icon {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 670px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.342);
+    transition: 0.1s ease-out;
+}
+
+.hero-form-icon:hover {
+    color: #fff;
+    transition: 0.1s ease-out;
+}
+
+.auto-complete {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 170px;
+}
+
+.auto-complete .MuiAutocomplete-root label {
+    color: #fff;
+}
+
+.auto-complete .MuiAutocomplete-root:not(.MuiInputBase-root):hover {
+    border: 1px solid #fff;
+}
+
+.auto-complete .MuiAutocomplete-root fieldset {
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* responsive design */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .main-nav {
+        width: 95%;
+    }
+
+    .main-nav .site-logo h2 {
+        margin-right: 0px;
+        padding-left: 10px;
+    }
+
+    .main-nav .nav-cart {
+        display: none;
+    }
+
+    .hero-form-icon {
+        top: 455px;
+        margin-left: 0px;
+    }
+
+    .hero-contents {
+        margin-top: 100px;
+    }
+
+    .hero-contents h2 {
+        font-size: 35px;
+    }
+
+    .hero-contents h4 {
+        font-size: 20px;
+    }
+
+    .hero-contents form input {
+        width: 90%;
+        padding: 15px 40px;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.342);
+    }
+
+    .hero-form-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main-nav .site-logo h2 {
+        margin-right: 0px;
+        padding-left: 10px;
+    }
+
+    .main-nav .nav-cart {
+        display: none;
+    }
+
+    .hero-form-icon {
+        top: 455px;
+        margin-left: 0px;
+    }
+
+    .hero-contents {
+        margin-top: 100px;
+    }
+
+    .hero-contents h2 {
+        font-size: 35px;
+    }
+
+    .hero-contents h4 {
+        font-size: 20px;
+    }
+
+    .hero-contents form input {
+        width: 90%;
+        padding: 15px 40px;
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.342);
+    }
+
+    .hero-form-icon {
+        display: none;
+    }
+
+}

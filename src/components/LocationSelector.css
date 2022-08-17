@@ -1,0 +1,27 @@
+.location-selector-container {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+}
+
+.location-selector-container * {
+    padding: 0 5px;
+}
+
+.location-selector-container .current-location {
+    font-weight: 600;
+}
+
+.location-selector-container .location-selector {
+    color: #fbc5b9;
+    font-size: 13px;
+    text-decoration: underline dashed #fbc5b9;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.location-selector-container .location-selector:hover {
+    color: #fff;
+    transition: 0.1s ease-in;
+}

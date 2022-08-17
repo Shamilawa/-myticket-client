@@ -1,0 +1,21 @@
+.event p {
+    padding-bottom: 75px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.event-page-card {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    row-gap: 50px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-page-card .up-event-card {
+    place-self: center;
+}

@@ -1,0 +1,217 @@
+.up-event-container {
+    max-width: 1440px;
+    margin: 75px auto;
+}
+
+.up-event-container .up-event-header h3 {
+    color: #373737;
+    border-left: 3px solid var(--main-orange);
+    padding-left: 15px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.up-event-container .up-event-header div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.up-event-container .up-event-header p {
+    color: #6f6f6f;
+    width: 70%;
+    margin-left: 15px;
+}
+
+.up-event-container .up-event-header button {
+    color: var(--main-orange);
+    background-color: transparent;
+    border: 1px solid var(--main-orange);
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.up-event-container .up-event-header button:hover {
+    background-color: var(--main-orange);
+    color: #fff;
+    transition: 0.2s ease-out;
+}
+
+.up-event-card-container {
+    display: flex;
+}
+
+.up-event-card-container .up-event-card {
+    width: 480px;
+    height: 400px;
+}
+
+.up-event-card-container .up-event-card:nth-child(odd) {
+    background: rgb(45, 45, 45);
+    background: linear-gradient(356deg, rgba(45, 45, 45, 1) 20%, rgba(111, 111, 111, 1) 75%);
+}
+
+.up-event-card-container .up-event-card:nth-child(even) {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(356deg, rgba(0, 0, 0, 1) 20%, rgba(55, 55, 55, 1) 75%);
+}
+
+.up-event-card .time-label {
+    background-color: #242424;
+    width: fit-content;
+    padding: 15px;
+    margin-left: 25px;
+}
+
+.up-event-card .time-label .date {
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+}
+
+.up-event-card .time-label .month,
+.year {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.up-event-card .up-event-card-meta {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 25px;
+    margin-top: 200px;
+}
+
+.up-event-card .up-event-card-meta .title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+    width: 300px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.up-event-card .up-event-card-meta .title:hover {
+    color: var(--main-orange);
+    transition: 0.2s ease-out;
+}
+
+.up-event-card .up-event-card-meta .location {
+    font-size: 14px;
+}
+
+.up-event-card .up-event-card-meta button {
+    background-color: var(--main-orange);
+    border: 1px solid var(--main-orange);
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.up-event-card .up-event-card-meta button:hover {
+    background-color: transparent;
+    color: var(--main-orange);
+    border: 1px solid var(--main-orange);
+    transition: 0.2s ease-out;
+}
+
+
+
+
+
+
+
+/* Mobile responsive section */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .up-event-container .up-event-header div {
+        flex-direction: column;
+    }
+
+    .up-event-container .up-event-header p {
+        width: 90%;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .up-event-container .up-event-header button {
+        width: 70%;
+        margin-left: 15px;
+    }
+
+    .up-event-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .up-event-card-container .up-event-card {
+        width: 95%;
+        height: 400px;
+        margin: 7.5px auto;
+    }
+
+    .up-event-card .up-event-card-meta {
+        display: flex;
+        flex-direction: column;
+        margin-top: 180px;
+    }
+
+    .up-event-card .up-event-card-meta div {
+        margin-bottom: 15px;
+    }
+
+    .up-event-card .up-event-card-meta button {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .up-event-container .up-event-header div {
+        flex-direction: column;
+    }
+
+    .up-event-container .up-event-header p {
+        width: 90%;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .up-event-container .up-event-header button {
+        width: 70%;
+        margin-left: 15px;
+    }
+
+    .up-event-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .up-event-card-container .up-event-card {
+        width: 95%;
+        height: 400px;
+        margin: 7.5px auto;
+    }
+
+    .up-event-card .up-event-card-meta {
+        display: flex;
+        flex-direction: column;
+        margin-top: 180px;
+    }
+
+    .up-event-card .up-event-card-meta div {
+        margin-bottom: 15px;
+    }
+
+    .up-event-card .up-event-card-meta button {
+        width: 40%;
+    }
+}

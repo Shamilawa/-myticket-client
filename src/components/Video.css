@@ -1,0 +1,33 @@
+.video-container {
+    background-color: #242424;
+}
+
+.video-container-inner-content {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.video-container-inner-content h3 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.video-container-inner-content p {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.video-container-inner-content img {
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.video-container-inner-content img:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-out;
+}

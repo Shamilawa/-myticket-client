@@ -1,0 +1,35 @@
+.partners-container {
+    max-width: 1440px;
+    margin: 75px auto;
+}
+
+.partners-container .partner-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partners-container .partner-logos * {
+    transition: 0.2s ease-in-out;
+}
+
+.partners-container .partner-logos *:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+
+/* Mobile responsive section */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+@media screen and (max-width: 550px) {
+
+    .partners-container .partner-logos {
+        flex-direction: column;
+    }
+
+    .partners-container .partner-logos * {
+        margin-bottom: 75px;
+    }
+}

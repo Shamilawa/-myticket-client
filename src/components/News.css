@@ -1,0 +1,234 @@
+.news-container {
+    max-width: 1440px;
+    margin: 50px auto;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-container .latest-news h3 {
+    color: #373737;
+    border-left: 3px solid var(--main-orange);
+    padding-left: 15px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom: 35px;
+}
+
+.news-container .latest-news .news-card {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.news-container .latest-news .news-post-card-inside {
+    width: 400px;
+    height: 200px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(356deg, rgba(0, 0, 0, 1) 20%, rgba(55, 55, 55, 1) 75%);
+}
+
+.news-container .latest-news .news-post-card-inside .time-label-news {
+    background-color: var(--main-orange);
+    width: fit-content;
+    color: #fff;
+    padding: 15px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.news-container .latest-news .news-post-card-inside .time-label-news .date {
+    font-size: 35px;
+}
+
+.post-content {
+    padding-left: 25px;
+}
+
+.post-content .post-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #373737;
+    width: 370px;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+}
+
+.post-content .post-title:hover {
+    color: var(--main-orange);
+    transition: 0.1s ease-out;
+}
+
+.post-content .post-meta {
+    color: #6f6f6f;
+    font-size: 13px;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+.post-content .post-meta span {
+    color: var(--main-orange);
+}
+
+.post-content .post-des {
+    width: 550px;
+    color: #6f6f6f;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.latest-news .pagination {
+    display: flex;
+}
+
+.latest-news .pagination * {
+    border: 1px solid var(--main-orange);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 4px;
+    margin: 8px;
+    border-radius: 3px;
+    color: var(--main-orange);
+    cursor: pointer;
+}
+
+.latest-news .pagination :first-child {
+    background-color: var(--main-orange);
+    color: #fff;
+}
+
+.tweets {
+    width: 85%;
+}
+
+.tweets h3 {
+    color: #373737;
+    border-left: 3px solid var(--main-orange);
+    padding-left: 15px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom: 35px;
+}
+
+.tweets .tweeter-logo-section {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    align-items: center;
+    padding: 30px 25px;
+}
+
+.tweets .tweeter-logo-section img {
+    width: 50px;
+    height: 50px;
+}
+
+.tweets .tweeter-logo-section div .title {
+    color: #4e4e4e;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tweets .tweeter-logo-section div .username {
+    color: #6f6f6f;
+    font-size: 15px;
+}
+
+.tweets .tweeter-logo-section button {
+    background-color: #41c3ff;
+    border: none;
+    padding: 8px 30px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.tweets .latest-tweets {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    border-bottom: 1px solid #eaeaea;
+    margin-left: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.tweets .latest-tweets .tweet-content {
+    margin-left: 45px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #6f6f6f;
+    width: 75%;
+}
+
+.tweets .latest-tweets .tweet-content span {
+    color: var(--main-orange);
+}
+
+.tweets .latest-tweets .posted-time {
+    color: #6f6f6f;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/* Mobile responsive section */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+@media screen and (max-width: 550px) {
+    .news-container {
+        flex-direction: column;
+    }
+
+    .news-container .latest-news .news-card {
+        flex-direction: column;
+    }
+
+    .post-content .post-des {
+        width: auto;
+    }
+
+    .tweets {
+        width: 100%;
+    }
+
+    .tweets .latest-tweets {
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+    .latest-news .pagination {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+
+    .latest-news .pagination * {
+        border: 1px solid var(--main-orange);
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding-top: 4px;
+        margin: 8px;
+        border-radius: 3px;
+        color: var(--main-orange);
+        cursor: pointer;
+    }
+
+    .tweets .latest-tweets {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .tweets .latest-tweets .tweet-content {
+        margin-left: 0;
+        width: auto;
+    }
+
+}

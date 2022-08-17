@@ -1,0 +1,79 @@
+.header-container {
+    background-color: black;
+}
+
+.top-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    color: var(--grey);
+    font-size: 12px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.nav-contact-details {
+    display: flex;
+}
+
+.nav-contacts {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.nav-contacts * {
+    cursor: pointer;
+    transition: 0.1s ease-out;
+}
+
+.nav-contacts *:hover {
+    color: #fff;
+    transition: 0.1s ease-out;
+}
+
+.nav-contacts :first-child {
+    margin-right: 15px;
+    color: var(--main-orange);
+}
+
+.login-section {
+    display: flex;
+    align-items: center;
+}
+
+.login-section .user {
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.login-section .user:hover {
+    transform: scale(1.05);
+    transition: 0.1s ease-in;
+}
+
+
+.login-section :first-child {
+    color: var(--main-orange);
+}
+
+.login-section p {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .top-section {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header-container {
+        display: none;
+    }
+}
